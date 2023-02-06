@@ -1,17 +1,13 @@
-Backend Description[WIP]
+# On-Chain Runner & Backend for https://galaxythrone.io
+
+Automatically checks on-chain state on Polygon and triggers custom on-chain transactions depending on the state.
+
+Also indexes & serves on-chain data for quicker UX on the game frontend
+
+Using Nestjs + Typescript & Prisma/Docker
 
 
-Automatically checkUpkeep & performUpkeep
 
-Automatically storing On-Chain Data for Galaxy-Throne for easier & quicker data querying for players
-
-Login Function via Account Signing ( WIP )
-
-Profile Function ( WIP )
-
-Leaderboard Function ( WIP)
-
-Turnbased Combat Serverside ( Hackathon starting in Feb1)
-
+Outdated compared to private live version, updating it as I go from milestone to milestone
 
 
