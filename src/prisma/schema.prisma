@@ -1,0 +1,48 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Attack {
+  id Int @id @default(autoincrement())
+
+  createdAt DateTime @default(now())
+
+  updatedAt DateTime @updatedAt()
+
+  attackInstanceId Int
+
+  AttackerAddress String
+
+  AttackStartTime Int?
+
+  Distance Int?
+
+  TimeToBeResolved Int?
+
+  FromPlanet String?
+
+  ToPlanet String?
+
+  AttackerShipIds Int[]
+
+  AttackSeed Int[]
+}
+
+// DefenderAddress String
+
+// AttackStartedTimestamp Int
+
+// DistanceAttack Int
+
+// PlanetIdFrom Int
+
+// PlanetIdAttacked Int
+// AttackerShipsIds Int[]
